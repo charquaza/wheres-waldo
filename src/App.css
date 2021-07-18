@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    width: 100vw;
+    padding-top: 10vh;
+}
+
+/* header component */
+header {
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 9vh;
+    padding-top: 1vh;
+    background: white;
+}
+
+header * {
+    line-height: 9vh;
+}
+
+/* image component */
+main img {
+    max-width: 100%;
+}
+
+main a {
+    padding: 1vh;
+}
