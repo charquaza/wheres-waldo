@@ -32,3 +32,9 @@ main img {
 main a {
     padding: 1vh;
 }
+
+/* dropdown box */
+.dropdown-box {
+    position: absolute;
+    background: lightgray;
+}
