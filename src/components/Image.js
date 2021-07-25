@@ -13,7 +13,7 @@ function Image() {
     }
 
     return (
-        <main>
+        <div className="image">
             <Dropdown top={coords.y} left={coords.x} />
             <img 
                 onClick={getCoords}
@@ -24,7 +24,7 @@ function Image() {
                 target="_blank"
                 rel='noreferrer'
             >Art by Viking011 on DeviantArt</a>
-        </main>
+        </div>
     );
 }
 

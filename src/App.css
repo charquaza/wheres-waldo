@@ -8,7 +8,7 @@ html {
     padding-top: 10vh;
 }
 
-/* header component */
+/* Header component */
 header {
     display: flex;
     justify-content: space-evenly;
@@ -24,12 +24,22 @@ header * {
     line-height: 9vh;
 }
 
-/* image component */
-main img {
+/* StartScreen component */
+.start-screen ul {
+    display: flex;
+    list-style: none;
+}
+.start-screen img {
+    min-width: 100px;
+    max-width: 20vw;
+}
+
+/* Image component */
+.image img {
     max-width: 100%;
 }
 
-main a {
+.image a {
     padding: 1vh;
 }
 

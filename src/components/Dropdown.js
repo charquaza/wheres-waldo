@@ -9,10 +9,10 @@ function Dropdown(props) {
                 style={{top: top, left: left}}
             >
                 <ul>
-                    <li>Charizard</li>
-                    <li>Greninja</li>
-                    <li>Shiny Tentacool</li>
-                    <li>MissingNo.</li>
+                    <li><button>Charizard</button></li>
+                    <li><button>Greninja</button></li>
+                    <li><button>Shiny Tentacool</button></li>
+                    <li><button>MissingNo.</button></li>
                 </ul>
             </div>
         );
