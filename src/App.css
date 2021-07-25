@@ -10,18 +10,34 @@ html {
 
 /* Header component */
 header {
-    display: flex;
-    justify-content: space-evenly;
     position: fixed;
     top: 0;
     width: 100vw;
-    height: 9vh;
+    min-height: 9vh;
     padding-top: 1vh;
     background: white;
+    z-index: 1;
 }
 
-header * {
+header h1 {
+    text-align: center;
     line-height: 9vh;
+}
+
+.progress-bar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.progress-bar ul {
+    display: flex;
+    list-style: none;
+}
+
+.progress-bar img {
+    min-width: 50px;
+    max-width: 8vw;
 }
 
 /* StartScreen component */

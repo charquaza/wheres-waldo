@@ -2,7 +2,7 @@ import { useState } from "react";
 import Dropdown from "./Dropdown";
 import pokemon from "../images/pokemon-poster-viking011.jpeg";
 
-function Image() {
+function GameScreen() {
     const [coords, setCoords] = useState({x: null, y: null});
 
     function getCoords(click) {
@@ -28,4 +28,4 @@ function Image() {
     );
 }
 
-export default Image;
+export default GameScreen;

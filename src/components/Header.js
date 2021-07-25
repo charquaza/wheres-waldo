@@ -1,10 +1,16 @@
+import PokemonList from "./PokemonList";
 import Timer from "./Timer";
 
-function Header() {
+function Header(props) {
     return (
         <header>
             <h1>Where's Waldo?</h1>
-            <Timer />
+            {props.gameStarted &&
+                <div className="progress-bar">
+                    <PokemonList /> 
+                    <Timer />
+                </div>
+            }
         </header>
     );
 }

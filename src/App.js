@@ -1,6 +1,5 @@
-import StartScreen from "./components/StartScreen";
 import Header from "./components/Header";
-import Image from "./components/Image";
+import Main from "./components/Main";
 import { useState } from "react";
 import './App.css';
 
@@ -13,13 +12,8 @@ function App() {
 
   return (
     <>
-      <Header />
-      <main>
-        {gameStarted
-          ? <Image />
-          : <StartScreen startGame={startGame} />
-        }
-      </main>
+      <Header gameStarted={gameStarted} />
+      <Main gameStarted={gameStarted} startGame={startGame} />
     </>
   );
 }
