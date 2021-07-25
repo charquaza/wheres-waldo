@@ -5,6 +5,7 @@
 
 html {
     width: 100vw;
+    /* need to update this for game screen header */
     padding-top: 10vh;
 }
 
@@ -50,17 +51,28 @@ header h1 {
     max-width: 20vw;
 }
 
-/* Image component */
-.image img {
+/* GameScreen component */
+.game-screen img {
     max-width: 100%;
 }
 
-.image a {
+.game-screen a {
     padding: 1vh;
 }
 
-/* dropdown box */
+/* Dropdown component */
 .dropdown-box {
     position: absolute;
     background: lightgray;
+}
+
+/* TargetBox component */
+.target-box {
+    width: 10vw;
+    max-width: 100px;
+    height: 10vw;
+    max-height: 100px;
+    position: absolute;
+    border: 5px dashed darkgreen;
+    background: rgba(144, 238, 144, 0.4);
 }

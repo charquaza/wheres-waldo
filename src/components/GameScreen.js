@@ -1,5 +1,6 @@
-import { useState } from "react";
 import Dropdown from "./Dropdown";
+import TargetBox from "./TargetBox";
+import { useState } from "react";
 import pokemon from "../images/pokemon-poster-viking011.jpeg";
 
 function GameScreen() {
@@ -8,13 +9,16 @@ function GameScreen() {
     function getCoords(click) {
         var xCoord = click.pageX;
         var yCoord = click.pageY;
+
+        console.log(xCoord, yCoord);
         
         setCoords({x: xCoord, y: yCoord});
     }
 
     return (
-        <div className="image">
+        <div className="game-screen">
             <Dropdown top={coords.y} left={coords.x} />
+            <TargetBox top={coords.y} left={coords.x} />
             <img 
                 onClick={getCoords}
                 src={pokemon} alt="All Pokémon from Generations I-VI" 
