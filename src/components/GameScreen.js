@@ -9,8 +9,6 @@ function GameScreen() {
     function getCoords(click) {
         var xCoord = click.pageX;
         var yCoord = click.pageY;
-
-        console.log(xCoord, yCoord);
         
         setCoords({x: xCoord, y: yCoord});
     }

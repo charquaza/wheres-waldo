@@ -3,11 +3,11 @@ function TargetBox(props) {
     var left = props.left;
 
     if (top !== null && left !== null) {
-        //calculate box dimensions using CSS rule for .target-box
+        //calculate target box dimensions using CSS rule for .target-box
         var boxDimensions = (window.innerWidth > 1000) 
             ? 100 + 10 : window.innerWidth / 10 + 10;
 
-        //center box on click site
+        //center target box on click site
         top -= boxDimensions / 2;
         left -= boxDimensions / 2;
 
