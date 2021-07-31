@@ -6,7 +6,7 @@
 html {
     width: 100vw;
     /* need to update this for game screen header */
-    padding-top: 10vh;
+    padding-top: 20vh;
 }
 
 /* Header component */
@@ -14,7 +14,7 @@ header {
     position: fixed;
     top: 0;
     width: 100vw;
-    min-height: 9vh;
+    max-height: 20vh;
     padding-top: 1vh;
     background: white;
     z-index: 1;

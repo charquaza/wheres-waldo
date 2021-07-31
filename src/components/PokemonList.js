@@ -19,6 +19,7 @@ function PokemonList() {
                 return Promise.all(urlList);
             })
             .then((urlList) => {
+                //wrap url and name in an object for each image
                 var imagesInfo = urlList.map((url, index) => {
                     return {url, name: imageNames[index]};
                 });

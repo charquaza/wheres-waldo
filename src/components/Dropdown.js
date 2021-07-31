@@ -17,11 +17,11 @@ function Dropdown(props) {
                 className="dropdown-box"
                 style={{top: top, left: left}}
             >
-                <ul>
-                    <li><button>Charizard</button></li>
-                    <li><button>Greninja</button></li>
-                    <li><button>Shiny Tentacool</button></li>
-                    <li><button>MissingNo.</button></li>
+                <ul onClick={props.handleClick}>
+                    <li><button id="charizard">Charizard</button></li>
+                    <li><button id="greninja">Greninja</button></li>
+                    <li><button id="shinytentacool">Shiny Tentacool</button></li>
+                    <li><button id="missingno">MissingNo.</button></li>
                 </ul>
             </div>
         );
