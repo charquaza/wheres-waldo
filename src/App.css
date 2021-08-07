@@ -46,6 +46,7 @@ header h1 {
     display: flex;
     list-style: none;
 }
+
 .start-screen img {
     min-width: 100px;
     max-width: 20vw;
@@ -76,3 +77,31 @@ header h1 {
     border: 5px dashed darkgreen;
     background: rgba(144, 238, 144, 0.4);
 }
+
+/* Feedback message box */
+.feedback-true {
+    position: absolute;
+    background: lightgreen;
+    animation-name: hide;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.feedback-false {
+    position: absolute;
+    background: palevioletred;
+    animation-name: hide;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+/* animations */
+@keyframes hide {
+    from {
+        z-index: 2;
+    }
+
+    to {
+        z-index: -1;
+    }
+} 
