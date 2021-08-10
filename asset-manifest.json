@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/wheres-waldo/static/css/main.3b3b6df9.chunk.css",
-    "main.js": "/wheres-waldo/static/js/main.f1062649.chunk.js",
-    "main.js.map": "/wheres-waldo/static/js/main.f1062649.chunk.js.map",
+    "main.css": "/wheres-waldo/static/css/main.5b39337f.chunk.css",
+    "main.js": "/wheres-waldo/static/js/main.b3142947.chunk.js",
+    "main.js.map": "/wheres-waldo/static/js/main.b3142947.chunk.js.map",
     "runtime-main.js": "/wheres-waldo/static/js/runtime-main.68352134.js",
     "runtime-main.js.map": "/wheres-waldo/static/js/runtime-main.68352134.js.map",
     "static/js/2.de4e2909.chunk.js": "/wheres-waldo/static/js/2.de4e2909.chunk.js",
     "static/js/2.de4e2909.chunk.js.map": "/wheres-waldo/static/js/2.de4e2909.chunk.js.map",
     "index.html": "/wheres-waldo/index.html",
-    "static/css/main.3b3b6df9.chunk.css.map": "/wheres-waldo/static/css/main.3b3b6df9.chunk.css.map",
+    "static/css/main.5b39337f.chunk.css.map": "/wheres-waldo/static/css/main.5b39337f.chunk.css.map",
     "static/js/2.de4e2909.chunk.js.LICENSE.txt": "/wheres-waldo/static/js/2.de4e2909.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.68352134.js",
     "static/js/2.de4e2909.chunk.js",
-    "static/css/main.3b3b6df9.chunk.css",
-    "static/js/main.f1062649.chunk.js"
+    "static/css/main.5b39337f.chunk.css",
+    "static/js/main.b3142947.chunk.js"
   ]
 }
