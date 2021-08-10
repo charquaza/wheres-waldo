@@ -9,12 +9,16 @@ html {
     padding-top: 20vh;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 /* Header component */
 header {
     position: fixed;
     top: 0;
     width: 100vw;
-    max-height: 20vh;
+    max-height: 19vh;
     padding-top: 1vh;
     background: white;
     z-index: 1;
@@ -37,11 +41,27 @@ header h1 {
 }
 
 .progress-bar img {
-    min-width: 50px;
-    max-width: 8vw;
+    min-height: 50px;
+    max-height: 10vh;
+}
+
+.progress-bar p {
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
 /* StartScreen component */
+.start-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.start-screen p {
+    font-size: 1.2rem;
+    margin: 1vh;
+}
+
 .start-screen ul {
     display: flex;
     list-style: none;
@@ -50,6 +70,20 @@ header h1 {
 .start-screen img {
     min-width: 100px;
     max-width: 20vw;
+}
+
+.start-screen button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: greenyellow;
+    border: 5px solid lightgreen;
+    border-radius: 20px;
+}
+
+.start-screen button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 /* GameScreen component */
@@ -61,10 +95,37 @@ header h1 {
     padding: 1vh;
 }
 
+/* EndScreen component */
+.end-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.end-screen p {
+    font-size: 1.5rem;
+    margin: 4px;
+}
+
 /* Dropdown component */
 .dropdown-box {
     position: absolute;
-    background: lightgray;
+}
+
+.dropdown-box ul {
+    list-style: none;
+}
+
+.dropdown-box li {
+    width: 100%;
+}
+
+.dropdown-box button {
+    width: 100%;
+    padding: 2px 8px;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 /* TargetBox component */
@@ -81,6 +142,10 @@ header h1 {
 /* Feedback message box */
 .feedback-true {
     position: absolute;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
     background: lightgreen;
     animation-name: hide;
     animation-duration: 3s;
@@ -89,6 +154,10 @@ header h1 {
 
 .feedback-false {
     position: absolute;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
     background: palevioletred;
     animation-name: hide;
     animation-duration: 3s;

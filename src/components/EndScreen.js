@@ -18,7 +18,7 @@ function EndScreen(props) {
     }, []);
 
     return (
-        <div>
+        <div className="end-screen">
             <p>Well done!</p>
             {(totalTime !== null) &&
                 <p>It took you <strong>{totalTime}</strong> seconds to catch them all.</p>
