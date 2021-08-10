@@ -2,14 +2,14 @@ import { useState, useEffect } from "react";
 import firebase from "../firebase";
 import "firebase/firestore";
 
-function EndScreen() {
+function EndScreen(props) {
     const [totalTime, setTotalTime] = useState(null);
 
-    //get start and end time
+    //calculate total time taken to complete game
     useEffect(() => {
         async function calculateTime() {
             var db = firebase.firestore();
-            var DocumentSnapshot = await db.collection("timer").doc("timestamps").get();
+            var DocumentSnapshot = await db.collection("timestamps").doc(props.userId).get();
             var timestamps = DocumentSnapshot.data();
             setTotalTime(timestamps.endTime.seconds - timestamps.startTime.seconds);
         }
@@ -19,7 +19,7 @@ function EndScreen() {
 
     return (
         <div>
-            <p>Congratulations!</p>
+            <p>Well done!</p>
             {(totalTime !== null) &&
                 <p>It took you <strong>{totalTime}</strong> seconds to catch them all.</p>
             }
